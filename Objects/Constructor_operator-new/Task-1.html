@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  </head>
+
+    <!-- Создайте new Accumulator -->
+<body>
+    <script>
+        "use strict";
+
+        function Accumulator(startingValue) {
+        this.value = startingValue;
+
+        this.read = function() {
+          this.value += +prompt('Сколько добавить?', '');
+        };
+
+      }
+
+      let accumulator = new Accumulator(1);
+      accumulator.read();
+      accumulator.read();
+      alert(accumulator.value);
+    </script>
+</body>
+
+</html>

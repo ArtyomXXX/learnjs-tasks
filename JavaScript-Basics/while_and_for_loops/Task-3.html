@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+ <!-- Повторять цикл, пока ввод неверен -->
+ <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            "use strict";
+
+            while (true) {
+                let n = +prompt("Введите число большее 100:", "");
+
+                if (n > 100) {
+                    alert(`Вывод: ${n} \nКонец выполнения программы!`);
+                    break;
+                } else if (n === null) {
+
+                } else {
+                    alert("Введите ещё раз!");
+                }
+            }
+        </script>
+    </body>
+ </html>
+ 

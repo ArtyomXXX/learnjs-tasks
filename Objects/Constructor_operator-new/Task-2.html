@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+</head>
+
+<!-- Создайте калькулятор при помощи конструктора, new Calculator -->
+
+<body>
+  <script>
+    "use strict";
+
+    function Calculator() {
+
+      this.read = function () {
+        this.x = +prompt('Первое число:', '');
+        this.y = +prompt('Второе число:', '');
+      };
+
+      this.sum = function () {
+        return this.x + this.y;
+      };
+
+      this.mul = function () {
+        return this.x * this.y;
+      };
+    }
+
+    let calculator = new Calculator();
+    calculator.read();
+
+    alert("Сумма: " + calculator.sum());
+    alert("Произведение: " + calculator.mul());
+  </script>
+</body>
+
+</html>

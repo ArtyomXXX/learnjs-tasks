@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  </head>
+
+    <!-- Создайте калькулятор -->
+<body>
+    <script>
+        "use strict";
+        
+        let calculator = {
+        sum() {
+          return this.x + this.y;
+        },
+
+        mul() {
+          return this.x * this.y;
+        },
+
+        read() {
+          this.x = +prompt('Первое число:', '');
+          this.y = +prompt('Второе число:', '');
+        }
+        };
+
+        calculator.read();
+        alert( calculator.sum() );
+        alert( calculator.mul() );
+        
+    </script>
+</body>
+
+</html>

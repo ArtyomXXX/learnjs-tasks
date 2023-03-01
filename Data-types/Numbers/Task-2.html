@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Сумма пользовательских чисел -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        function readNumber() {
+            let num;
+
+            do {
+                num = prompt("Введите число", '');
+            } while (!isFinite(num));
+
+            if (num === null || num === '') 
+            {
+                return null;
+            }
+
+            return +num;
+        }
+
+        alert(`Число: ${readNumber()}`);
+    </script>
+</body>
+
+</html>
